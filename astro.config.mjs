@@ -3,6 +3,6 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://autopacker.dev',
+  site: 'https://auto-packer.github.io/',
   integrations: [tailwind()]
 });

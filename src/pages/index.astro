@@ -7,88 +7,88 @@ import Layout from '../layouts/Layout.astro';
     <div class="absolute left-0 right-0 top-20 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-blue-600/20 dark:bg-blue-500/20 opacity-20 blur-[100px] animate-pulse"></div>
 
     <!-- 1. The Pain/Pivot Section -->
-    <section class="text-center max-w-4xl mx-auto mb-24 md:mb-32">
-        <h1 class="text-4xl md:text-6xl font-black bg-clip-text text-transparent bg-gradient-to-b from-slate-800 to-slate-600 dark:from-slate-100 dark:to-slate-400 pb-4 transition-colors duration-300 hover:from-blue-600">
+    <section class="text-center max-w-4xl mx-auto mb-16 sm:mb-24 md:mb-32">
+        <h1 class="text-3xl sm:text-4xl md:text-6xl font-black bg-clip-text text-transparent bg-gradient-to-b from-slate-800 to-slate-600 dark:from-slate-100 dark:to-slate-400 pb-4 transition-colors duration-300 hover:from-blue-600">
             Packaging shouldn't be the bottleneck.
         </h1>
-        <p class="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mt-4 transition-colors duration-300 hover:text-slate-700 dark:hover:text-slate-200">
-            Every failed software deployment is a drain on resources. Whether migrating to the cloud, managing legacy infrastructure, or simply keeping pace with updates, poorly packaged applications create a cascade of helpdesk tickets, frustrate users, and halt productivity. We are your dedicated remote packaging partner, embedding with your team to deliver zero-touch, reliable, and silently installed applications that just work.
+        <p class="text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto mt-4 transition-colors duration-300 hover:text-slate-700 dark:hover:text-slate-200">
+            Every failed software deployment is a drain on resources. Whether migrating to the cloud, managing legacy infrastructure, or simply keeping pace with updates, poorly packaged applications create a cascade of helpdesk tickets, frustrate users, and halt productivity. We are your dedicated remote packaging partner.
         </p>
     </section>
 
     <!-- 2. The Tech Stack Grid -->
-    <section class="mb-24 md:mb-32">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+    <section class="mb-16 sm:mb-24 md:mb-32">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
             
-            <div class="p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 transition-shadow duration-300 hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-blue-500/15">
-                <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3 transition-colors duration-300 hover:text-blue-600 dark:hover:text-blue-400">Intune & Modern Workplace</h3>
-                <p class="text-slate-600 dark:text-slate-400 transition-colors duration-300 hover:text-slate-700 dark:hover:text-slate-300">Full adoption of the cloud model. We specialize in `.intunewin` preparation, rigorous testing on Windows 10/11, Autopilot application deployments, and proactive management to ensure your cloud-first delivery is seamless and secure.</p>
+            <div class="p-4 sm:p-6 md:p-8 rounded-xl md:rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 transition-shadow duration-300 hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-blue-500/15">
+                <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-100 mb-2 md:mb-3 transition-colors duration-300 hover:text-blue-600 dark:hover:text-blue-400">Intune & Modern Workplace</h3>
+                <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 transition-colors duration-300 hover:text-slate-700 dark:hover:text-slate-300">Full adoption of the cloud model. We specialize in `.intunewin` preparation, rigorous testing on Windows 10/11, Autopilot application deployments, and proactive management.</p>
             </div>
             
-            <div class="p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 transition-shadow duration-300 hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-blue-500/15">
-                <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3 transition-colors duration-300 hover:text-blue-600 dark:hover:text-blue-400">SCCM / MECM Mastery</h3>
-                <p class="text-slate-600 dark:text-slate-400 transition-colors duration-300 hover:text-slate-700 dark:hover:text-slate-300">Go beyond simple deployments with end-to-end application lifecycle management. We handle complex task sequences, dependency chains, supersedence, and phased, risk-mitigated rollouts to ensure stability across your entire on-premise or co-managed estate.</p>
+            <div class="p-4 sm:p-6 md:p-8 rounded-xl md:rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 transition-shadow duration-300 hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-blue-500/15">
+                <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-100 mb-2 md:mb-3 transition-colors duration-300 hover:text-blue-600 dark:hover:text-blue-400">SCCM / MECM Mastery</h3>
+                <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 transition-colors duration-300 hover:text-slate-700 dark:hover:text-slate-300">Go beyond simple deployments with end-to-end application lifecycle management. We handle complex task sequences, dependency chains, supersedence, and phased rollouts.</p>
             </div>
 
-            <div class="p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 transition-shadow duration-300 hover:shadow-xl hover:shadow-cyan-500/20 dark:hover:shadow-cyan-400/15">
-                <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3 transition-colors duration-300 hover:text-cyan-600 dark:hover:text-cyan-400">Advanced Repackaging</h3>
-                <p class="text-slate-600 dark:text-slate-400 transition-colors duration-300 hover:text-slate-700 dark:hover:text-slate-300">True expertise in MSI, MSIX, and App-V using industry-standard tools like InstallShield and Master Packager. We craft robust, silent installations with complex PowerShell wrappers, custom actions, and transforms to handle even the most stubborn legacy applications.</p>
+            <div class="p-4 sm:p-6 md:p-8 rounded-xl md:rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 transition-shadow duration-300 hover:shadow-xl hover:shadow-cyan-500/20 dark:hover:shadow-cyan-400/15">
+                <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-100 mb-2 md:mb-3 transition-colors duration-300 hover:text-cyan-600 dark:hover:text-cyan-400">Advanced Repackaging</h3>
+                <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 transition-colors duration-300 hover:text-slate-700 dark:hover:text-slate-300">True expertise in MSI, MSIX, and App-V using industry-standard tools like InstallShield and Master Packager. We craft robust, silent installations with complex PowerShell wrappers.</p>
             </div>
 
-            <div class="p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 transition-shadow duration-300 hover:shadow-xl hover:shadow-cyan-500/20 dark:hover:shadow-cyan-400/15">
-                <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-3 transition-colors duration-300 hover:text-cyan-600 dark:hover:text-cyan-400">Apple Enterprise & Jamf</h3>
-                <p class="text-slate-600 dark:text-slate-400 transition-colors duration-300 hover:text-slate-700 dark:hover:text-slate-300">Bring the same level of enterprise control to your Mac fleet. Deep Jamf Pro and Jamf Composer expertise for custom PKG/DMG repackaging, pre/post-install scripting.</p>
+            <div class="p-4 sm:p-6 md:p-8 rounded-xl md:rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 transition-shadow duration-300 hover:shadow-xl hover:shadow-cyan-500/20 dark:hover:shadow-cyan-400/15">
+                <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-100 mb-2 md:mb-3 transition-colors duration-300 hover:text-cyan-600 dark:hover:text-cyan-400">Apple Enterprise & Jamf</h3>
+                <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 transition-colors duration-300 hover:text-slate-700 dark:hover:text-slate-300">Bring the same level of enterprise control to your Mac fleet. Deep Jamf Pro and Jamf Composer expertise for custom PKG/DMG repackaging, pre/post-install scripting.</p>
             </div>
         </div>
     </section>
 
     <!-- Why Us? Section -->
-    <section class="mb-24 md:mb-32 bg-slate-100/80 dark:bg-slate-900/50 rounded-2xl p-8 lg:p-12 border border-slate-200 dark:border-slate-800 transition-colors duration-300 hover:bg-slate-100/95 dark:hover:bg-slate-900/70">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+    <section class="mb-16 sm:mb-24 md:mb-32 bg-slate-100/80 dark:bg-slate-900/50 rounded-xl md:rounded-2xl p-6 sm:p-8 lg:p-12 border border-slate-200 dark:border-slate-800 transition-colors duration-300 hover:bg-slate-100/95 dark:hover:bg-slate-900/70">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-center">
             <div class="md:col-span-1 text-center md:text-left">
-                <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300 hover:text-blue-600 dark:hover:text-blue-400">Why Us?</h2>
-                <p class="text-blue-600 dark:text-blue-400 font-semibold mt-1">Experience meets Methodology</p>
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300 hover:text-blue-600 dark:hover:text-blue-400">Why Us?</h2>
+                <p class="text-sm sm:text-base text-blue-600 dark:text-blue-400 font-semibold mt-1">Experience meets Methodology</p>
             </div>
-            <div class="md:col-span-2 text-slate-700 dark:text-slate-400 text-lg transition-colors duration-300 hover:text-slate-800 dark:hover:text-slate-300">
+            <div class="md:col-span-2 text-slate-700 dark:text-slate-400 text-base sm:text-lg transition-colors duration-300 hover:text-slate-800 dark:hover:text-slate-300">
                 <p>
-                    With over 15 years dedicated exclusively to application packaging and enterprise deployments, we've seen every edge case and handled every complex vendor installer. We don't just deliver a package; we deliver a partnership focused on long-term reliability and a streamlined management experience for your IT team.
+                    With over 15 years dedicated exclusively to application packaging and enterprise deployments, we've seen every edge case. We deliver partnerships focused on long-term reliability and streamlined management.
                 </p>
             </div>
         </div>
     </section>
 
     <!-- 3. The Process Timeline -->
-    <section class="mb-24 md:mb-32">
+    <section class="mb-16 sm:mb-24 md:mb-32">
         <div class="max-w-2xl mx-auto">
-            <div class="space-y-16">
+            <div class="space-y-12 md:space-y-16">
                 <!-- Step 1 -->
-                <div class="flex items-start group">
+                <div class="flex items-start gap-4 md:gap-6 group">
                     <div class="flex-shrink-0">
-                        <span class="text-7xl font-black text-slate-300 dark:text-slate-700/80 transition-colors duration-300 group-hover:text-blue-400/60 dark:group-hover:text-blue-500/60">01</span>
+                        <span class="text-5xl sm:text-6xl md:text-7xl font-black text-slate-300 dark:text-slate-700/80 transition-colors duration-300 group-hover:text-blue-400/60 dark:group-hover:text-blue-500/60">01</span>
                     </div>
-                    <div class="ml-6 md:ml-8 mt-2">
-                        <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">The Handoff</h3>
-                        <p class="text-slate-600 dark:text-slate-400 mt-1 transition-colors duration-300 group-hover:text-slate-700 dark:group-hover:text-slate-300">Provide the source media, licensing details, and clear deployment requirements. We'll establish a discovery call to confirm the scope, understand dependencies, and define success criteria for UAT.</p>
+                    <div class="flex-1 mt-1 md:mt-2">
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">The Handoff</h3>
+                        <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 mt-2 transition-colors duration-300 group-hover:text-slate-700 dark:group-hover:text-slate-300">Provide the source media and requirements. We establish a discovery call to confirm scope and define success criteria.</p>
                     </div>
                 </div>
                 <!-- Step 2 -->
-                <div class="flex items-start group">
+                <div class="flex items-start gap-4 md:gap-6 group">
                     <div class="flex-shrink-0">
-                        <span class="text-7xl font-black text-slate-300 dark:text-slate-700/80 transition-colors duration-300 group-hover:text-blue-400/60 dark:group-hover:text-blue-500/60">02</span>
+                        <span class="text-5xl sm:text-6xl md:text-7xl font-black text-slate-300 dark:text-slate-700/80 transition-colors duration-300 group-hover:text-blue-400/60 dark:group-hover:text-blue-500/60">02</span>
                     </div>
-                    <div class="ml-6 md:ml-8 mt-2">
-                        <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">The Build</h3>
-                        <p class="text-slate-600 dark:text-slate-400 mt-1 transition-colors duration-300 group-hover:text-slate-700 dark:group-hover:text-slate-300">Your application is expertly repackaged, virtualized, or scripted for a silent, zero-touch installation. All work is performed in an isolated lab environment, adhering to best practices for clean and resilient packages.</p>
+                    <div class="flex-1 mt-1 md:mt-2">
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">The Build</h3>
+                        <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 mt-2 transition-colors duration-300 group-hover:text-slate-700 dark:group-hover:text-slate-300">Your application is expertly repackaged for a silent, zero-touch installation. Work performed in isolated lab adhering to best practices.</p>
                     </div>
                 </div>
                 <!-- Step 3 -->
-                <div class="flex items-start group">
+                <div class="flex items-start gap-4 md:gap-6 group">
                     <div class="flex-shrink-0">
-                        <span class="text-7xl font-black text-slate-300 dark:text-slate-700/80 transition-colors duration-300 group-hover:text-blue-400/60 dark:group-hover:text-blue-500/60">03</span>
+                        <span class="text-5xl sm:text-6xl md:text-7xl font-black text-slate-300 dark:text-slate-700/80 transition-colors duration-300 group-hover:text-blue-400/60 dark:group-hover:text-blue-500/60">03</span>
                     </div>
-                    <div class="ml-6 md:ml-8 mt-2">
-                        <h3 class="text-2xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">The Delivery</h3>
-                        <p class="text-slate-600 dark:text-slate-400 mt-1 transition-colors duration-300 group-hover:text-slate-700 dark:group-hover:text-slate-300">You receive a thoroughly tested MSI, MSIX, .intunewin, or PKG, delivered with comprehensive documentation covering installation commands, detection methods, and any custom configurations for immediate deployment.</p>
+                    <div class="flex-1 mt-1 md:mt-2">
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-100 transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">The Delivery</h3>
+                        <p class="text-sm sm:text-base text-slate-600 dark:text-slate-400 mt-2 transition-colors duration-300 group-hover:text-slate-700 dark:group-hover:text-slate-300">You receive thoroughly tested MSI, MSIX, or PKG with comprehensive documentation for immediate deployment.</p>
                     </div>
                 </div>
             </div>
@@ -96,16 +96,17 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <!-- 4. Footer/CTA -->
-    <footer class="text-center mt-32 pb-8">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6 transition-colors duration-300 hover:text-blue-600">Ready to clear your packaging backlog?</h2>
+    <footer class="text-center mt-24 pb-8">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 transition-colors duration-300 hover:text-blue-600">Ready to clear your packaging backlog?</h2>
         <a href="mailto:example@example.com" 
-           class="inline-block bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-500 dark:to-cyan-400 text-white font-bold py-4 px-10 rounded-lg text-lg
+           class="inline-block bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-500 dark:to-cyan-400 text-white font-bold py-3 px-8 sm:py-4 sm:px-10 rounded-lg text-base sm:text-lg
                   shadow-lg shadow-blue-600/20 dark:shadow-blue-500/20 
                   hover:shadow-xl hover:shadow-cyan-500/30 dark:hover:shadow-cyan-400/30
                   transition-shadow duration-300
-                  active:opacity-90">
+                  active:opacity-90
+                  touch-target">
             Let's Talk Deployment
         </a>
-        <p class="text-slate-500 dark:text-slate-500 font-mono text-sm mt-12 tracking-wider transition-colors duration-300 hover:text-slate-600 dark:hover:text-slate-400">>_ Hosted on Azure. Provisioned with Terraform.</p>
+        <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-500 font-mono mt-10 sm:mt-12 tracking-wider transition-colors duration-300 hover:text-slate-600 dark:hover:text-slate-400">>_ Hosted on Azure. Provisioned with Terraform.</p>
     </footer>
 </Layout>

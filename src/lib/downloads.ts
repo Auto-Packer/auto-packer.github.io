@@ -1,4 +1,6 @@
-export const downloadsData = [
+import type { Download } from '../types';
+
+export const downloadsData: Download[] = [
     {
         slug: 'installer-toolkit-v1',
         data: {
@@ -79,36 +81,5 @@ export const downloadsData = [
 <p>For support, visit our documentation portal or contact the support team.</p>
         `
     },
-    {
-        slug: 'my-software',
-        data: {
-            title: 'Rajeev',
-            vendor: 'Rajeev',
-            description: 'Brief description of your software',
-            version: '1.0.0',
-            releaseDate: new Date('2026-02-28'),
-            fileSize: '50 MB',
-            osRequirements: ['Windows 10', 'Windows 11'],
-            downloadUrl: '/downloads/Test.exe',
-            tags: ['Software', 'Tools']
-        },
-        
-        
-    },
-    {
-        slug: 'my-software',
-        data: {
-            title: 'Rajeev1',
-            vendor: 'Rajeev',
-            description: 'Brief description of your software',
-            version: '1.0.0',
-            releaseDate: new Date('2026-02-28'),
-            fileSize: '50 MB',
-            osRequirements: ['Windows 10', 'Windows 11'],
-            downloadUrl: '/downloads/Test.exe',
-            tags: ['Software', 'Tools']
-        },
-        
-        
-    }
+
 ];

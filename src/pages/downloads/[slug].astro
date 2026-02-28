@@ -1,0 +1,140 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import type { GetStaticPaths } from 'astro';
+import { downloadsData } from '../../lib/downloads';
+
+export const getStaticPaths: GetStaticPaths = async () => {
+    return downloadsData.map((download) => ({
+        params: { slug: download.slug },
+        props: { download },
+    }));
+};
+
+import type { Download } from '~/types';
+
+interface Props {
+    download: Download;
+}
+const { download } = Astro.props as Props;
+---
+
+<Layout title={`${download.data.title} | AutoPacker Downloads`}>
+    <div class="mb-12">
+        <a href="/downloads" class="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors mb-8">
+            <span>←</span>
+            <span>Back to Downloads</span>
+        </a>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Main Content -->
+            <div class="lg:col-span-2">
+                <h1 class="text-4xl md:text-5xl font-black text-slate-900 dark:text-slate-100 mb-4">
+                    {download.data.title}
+                </h1>
+                
+                <p class="text-xl text-slate-600 dark:text-slate-400 mb-8">
+                    {download.data.description}
+                </p>
+
+                <div class="prose prose-sm md:prose-base dark:prose-invert max-w-none mb-12 
+                    prose-headings:text-slate-900 dark:prose-headings:text-slate-100
+                    prose-p:text-slate-700 dark:prose-p:text-slate-300
+                    prose-li:text-slate-700 dark:prose-li:text-slate-300
+                    prose-strong:text-slate-900 dark:prose-strong:text-slate-100">
+                    {download.content && <div set:html={download.content} />}
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="lg:col-span-1">
+                <div class="sticky top-[100px] space-y-6">
+                    <!-- Download Card -->
+                    <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50">
+                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Version {download.data.version}</p>
+                        
+                        <a href={download.data.downloadUrl} class="w-full inline-block text-center bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-500 dark:to-cyan-400 text-white font-bold py-3 px-6 rounded-lg text-lg shadow-lg shadow-blue-600/20 dark:shadow-blue-500/20 hover:shadow-xl hover:shadow-cyan-500/30 dark:hover:shadow-cyan-400/30 transition-shadow duration-300 mb-4">
+                            ⬇️ Download Now
+                        </a>
+
+                        <p class="text-sm text-slate-600 dark:text-slate-400 text-center">
+                            Size: {download.data.fileSize}
+                        </p>
+                    </div>
+
+                    <!-- Info Card -->
+                    <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50">
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-slate-100 mb-4">Release Information</h3>
+
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">Version</p>
+                                <p class="text-lg font-semibold text-slate-900 dark:text-slate-100">v{download.data.version}</p>
+                            </div>
+
+                            <div>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">Release Date</p>
+                                <p class="text-lg font-semibold text-slate-900 dark:text-slate-100">
+                                    {new Date(download.data.releaseDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                                </p>
+                            </div>
+
+                            <div>
+                                <p class="text-sm text-slate-600 dark:text-slate-400">File Size</p>
+                                <p class="text-lg font-semibold text-slate-900 dark:text-slate-100">{download.data.fileSize}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- System Requirements -->
+                    <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50">
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-slate-100 mb-4">System Requirements</h3>
+
+                        <div class="space-y-2">
+                            {download.data.osRequirements.map((requirement) => (
+                                <div class="flex items-center gap-2">
+                                    <span class="text-green-600 dark:text-green-400">✓</span>
+                                    <span class="text-slate-700 dark:text-slate-300">{requirement}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    <!-- Tags -->
+                    {download.data.tags && download.data.tags.length > 0 && (
+                        <div class="p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50">
+                            <h3 class="text-lg font-bold text-slate-900 dark:text-slate-100 mb-4">Categories</h3>
+                            <div class="flex flex-wrap gap-2">
+                                {download.data.tags.map((tag) => (
+                                    <span class="inline-block px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-sm">
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>
+
+<style>
+    .prose {
+        --tw-prose-body: theme(colors.slate[700]);
+        --tw-prose-headings: theme(colors.slate[900]);
+        --tw-prose-lead: theme(colors.slate[600]);
+        --tw-prose-links: theme(colors.blue[700]);
+        --tw-prose-bold: theme(colors.slate[900]);
+        --tw-prose-counters: theme(colors.slate[500]);
+        --tw-prose-bullets: theme(colors.blue[500]);
+    }
+    .prose-invert {
+        --tw-prose-body: theme(colors.slate[400]);
+        --tw-prose-headings: theme(colors.slate[200]);
+        --tw-prose-lead: theme(colors.slate[400]);
+        --tw-prose-links: theme(colors.cyan[400]);
+        --tw-prose-bold: theme(colors.slate[200]);
+        --tw-prose-counters: theme(colors.slate[500]);
+        --tw-prose-bullets: theme(colors.blue[500]);
+    }
+</style>

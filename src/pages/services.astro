@@ -1,0 +1,98 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="AutoPacker Services | Expert Packaging Authority">
+    <div class="mb-16 md:mb-24 text-center max-w-2xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-black bg-clip-text text-transparent bg-gradient-to-b from-slate-800 to-slate-600 dark:from-slate-100 dark:to-slate-400 pb-4 transition-colors duration-300 hover:from-blue-600">
+            Core Capabilities
+        </h1>
+        <p class="text-lg text-slate-600 dark:text-slate-300 mt-2 transition-colors duration-300 hover:text-slate-700 dark:hover:text-slate-200">
+            A deep expertise across the full spectrum of modern and legacy enterprise endpoint management tools.
+        </p>
+    </div>
+
+    <div class="space-y-16 md:space-y-20">
+        <!-- Service: Intune -->
+        <div class="p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 transition-shadow duration-300 hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-blue-500/15">
+            <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-2 transition-colors duration-300 hover:text-blue-600 dark:hover:text-blue-400">Intune & Modern Workplace</h2>
+            <p class="text-blue-600 dark:text-blue-400 font-semibold mb-6">Cloud-native application delivery and management.</p>
+            <div class="prose dark:prose-invert max-w-none prose-p:mb-4 prose-ul:list-disc prose-ul:pl-6 prose-li:mb-2">
+                <p>Transitioning to a modern, cloud-managed desktop requires a robust application strategy. I provide end-to-end services for Microsoft Intune, ensuring your applications are deployed reliably, securely, and efficiently to your entire workforce, wherever they are.</p>
+                <ul>
+                    <li><strong>Win32 App Packaging (.intunewin):</strong> Conversion of complex installers (EXE, MSI, scripts) into the `.intunewin` format, with precise detection methods and requirement rules.</li>
+                    <li><strong>Autopilot Integration:</strong> Ensuring critical applications are available during the Out-of-Box Experience (OOBE), enabling true zero-touch provisioning for new devices.</li>
+                    <li><strong>Proactive Updates & Supersedence:</strong> Managing the application lifecycle within Intune, including deploying updates, handling version supersedence, and retiring old software.</li>
+                    <li><strong>PowerShell Script Deployment:</strong> Leveraging Intune's scripting capabilities for complex configuration tasks, registry changes, or to supplement application installations.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Service: SCCM / MECM -->
+        <div class="p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 transition-shadow duration-300 hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-blue-500/15">
+            <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-2 transition-colors duration-300 hover:text-blue-600 dark:hover:text-blue-400">SCCM / MECM Mastery</h2>
+            <p class="text-blue-600 dark:text-blue-400 font-semibold mb-6">On-premise and co-managed application lifecycle control.</p>
+            <div class="prose dark:prose-invert max-w-none prose-p:mb-4 prose-ul:list-disc prose-ul:pl-6 prose-li:mb-2">
+                <p>For organizations with significant on-premise infrastructure, System Center Configuration Manager (SCCM) remains the gold standard. I provide expert-level support for the entire application management workflow, from initial creation to scaled deployment and reporting.</p>
+                <ul>
+                    <li><strong>Application Model Expertise:</strong> Best-practice creation of Applications and Deployment Types, including complex detection methods and requirement logic to ensure installs only happen when they should.</li>
+                    <li><strong>Task Sequence Integration:</strong> Building and troubleshooting OS Deployment (OSD) task sequences where application installation is a critical component.</li>
+                    <li><strong>Phased Deployments:</strong> Creating and managing phased deployment rings to mitigate risk, ensuring new software is validated by pilot groups before a broad rollout.</li>
+                    <li><strong>Compliance & Reporting:</strong> Creating custom reports and configuration baselines to track application compliance and installation status across the enterprise.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Service: Advanced Repackaging -->
+        <div class="p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 transition-shadow duration-300 hover:shadow-xl hover:shadow-cyan-500/20 dark:hover:shadow-cyan-400/15">
+            <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-2 transition-colors duration-300 hover:text-cyan-600 dark:hover:text-cyan-400">Advanced Repackaging & Scripting</h2>
+            <p class="text-blue-600 dark:text-blue-400 font-semibold mb-6">Taming difficult installers and automating complex setups.</p>
+            <div class="prose dark:prose-invert max-w-none prose-p:mb-4 prose-ul:list-disc prose-ul:pl-6 prose-li:mb-2">
+                <p>Not all applications are designed for enterprise deployment. When vendor installers are insufficient, I create clean, silent, and reliable packages that conform to your standards. This is the core of reliable software deployment.</p>
+                <ul>
+                    <li><strong>MSI/MSIX Repackaging:</strong> Using tools like InstallShield and Master Packager to capture legacy setups and produce clean, standardized MSI or modern MSIX packages.</li>
+                    <li><strong>PowerShell App Deployment Toolkit (PSADT):</strong> Building powerful and user-friendly scripted installations using the industry-standard PSADT framework, providing users with deferral options and your IT team with robust logging.</li>
+                    <li><strong>Custom Wrapper Scripts:</strong> Writing bespoke PowerShell scripts to handle complex pre-requisites, license file application, configuration changes, or API interactions during installation.</li>
+                    <li><strong>Virtualization (App-V):</strong> Sequencing applications for Microsoft App-V, isolating them from the OS to prevent conflicts and streamline management, particularly in VDI environments.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Service: Apple & Jamf -->
+        <div class="p-8 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 transition-shadow duration-300 hover:shadow-xl hover:shadow-cyan-500/20 dark:hover:shadow-cyan-400/15">
+            <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-2 transition-colors duration-300 hover:text-cyan-600 dark:hover:text-cyan-400">Apple Enterprise & Jamf</h2>
+            <p class="text-blue-600 dark:text-blue-400 font-semibold mb-6">Bringing enterprise discipline to macOS management.</p>
+            <div class="prose dark:prose-invert max-w-none prose-p:mb-4 prose-ul:list-disc prose-ul:pl-6 prose-li:mb-2">
+                <p>Managing a fleet of Macs requires a different toolset and methodology. I apply the same principles of silent, reliable deployment to the Apple ecosystem using Jamf Pro.</p>
+                <ul>
+                    <li><strong>Custom PKG & DMG Building:</strong> Going beyond simple drag-and-drop apps. I use Jamf Composer and command-line tools to build signed, distribution-ready PKG installers from vendor sources.</li>
+                    <li><strong>Pre-flight & Post-flight Scripting:</strong> Authoring advanced `bash` or `zsh` scripts to run before or after installation to configure settings, install licenses, or check for dependencies.</li>
+                    <li><strong>Zero-Touch Provisioning:</strong> Integrating application deployment into your Mac zero-touch workflow, ensuring users get the software they need automatically on first boot.</li>
+                    <li><strong>Patch Management:</strong> Creating and managing patch policies within Jamf Pro to keep third-party macOS applications up-to-date and secure.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</Layout>
+
+<style>
+    .prose {
+        --tw-prose-body: theme(colors.slate[700]);
+        --tw-prose-headings: theme(colors.slate[900]);
+        --tw-prose-lead: theme(colors.slate[600]);
+        --tw-prose-links: theme(colors.blue[700]);
+        --tw-prose-bold: theme(colors.slate[900]);
+        --tw-prose-counters: theme(colors.slate[500]);
+        --tw-prose-bullets: theme(colors.blue[500]);
+    }
+    .prose-invert {
+        --tw-prose-body: theme(colors.slate[400]);
+        --tw-prose-headings: theme(colors.slate[200]);
+        --tw-prose-lead: theme(colors.slate[400]);
+        --tw-prose-links: theme(colors.cyan[400]);
+        --tw-prose-bold: theme(colors.slate[200]);
+        --tw-prose-counters: theme(colors.slate[500]);
+        --tw-prose-bullets: theme(colors.blue[500]);
+    }
+</style>

@@ -1,12 +1,10 @@
 ---
 title: "Decoding Microsoft Intune Logs: A Guide to Troubleshooting Deployments"
 description: "Learn how to effectively troubleshoot Microsoft Intune deployments by locating and reading the right log files for Win32 apps, scripts, and MDM policies."
-pubDate: 2026-03-07
+publishDate: 2026-03-07
 author: "AutoPacker Team"
 tags: ["intune", "troubleshooting", "sysadmin", "deployment"]
-image:
-  url: "/images/intune-logs-cover.jpg"
-  alt: "Microsoft Intune log troubleshooting on a computer screen"
+heroImage: "/images/intune-logs-cover.jpg"
 ---
 
 # Decoding Microsoft Intune Logs: A Guide to Troubleshooting Deployments

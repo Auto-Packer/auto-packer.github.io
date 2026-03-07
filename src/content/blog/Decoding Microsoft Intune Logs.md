@@ -4,7 +4,7 @@ description: "Learn how to effectively troubleshoot Microsoft Intune deployments
 publishDate: 2026-03-07
 author: "AutoPacker Team"
 tags: ["intune", "troubleshooting", "sysadmin", "deployment"]
-heroImage: "/images/intune-logs-cover.jpg"
+heroImage: "/blog/intune-logs-cover.jpg"
 ---
 
 # Decoding Microsoft Intune Logs: A Guide to Troubleshooting Deployments

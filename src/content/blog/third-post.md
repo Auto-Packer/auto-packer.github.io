@@ -2,6 +2,7 @@
 title: "5 Signs Your Application Portfolio Needs a Health Check"
 description: "Is your application portfolio becoming a liability? Here are 5 signs that it's time for a thorough health check and modernization effort."
 publishDate: 2026-03-02
+author: "Rajeev Kushwaha"
 heroImage: "/blog/health-check.jpg"
 tags: ["Portfolio Management", "Modernization", "Strategy"]
 ---

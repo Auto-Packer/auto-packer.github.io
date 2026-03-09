@@ -2,6 +2,7 @@
 title: "Why Most Application Packaging Fails"
 description: "A deep dive into the common pitfalls of enterprise application packaging and how to avoid them."
 publishDate: 2026-02-25
+author: "Rajeev Kushwaha"
 heroImage: "/blog/packaging-fails.jpg"
 tags: ["Packaging", "Intune", "Best Practices"]
 ---

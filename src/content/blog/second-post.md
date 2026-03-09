@@ -2,6 +2,7 @@
 title: "Mastering Intune Win32 App Deployments"
 description: "A video guide on how to package and deploy a complex application as a Win32 app in Microsoft Intune."
 publishDate: 2026-02-28
+author: "Rajeev Kushwaha"
 heroImage: "/blog/intune-video.jpg"
 tags: ["Intune", "Video", "Guide"]
 ---

@@ -22,6 +22,8 @@ const isCurrentPage = (url: string) => {
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <title>{title}</title>
+    <link rel="icon" href="/AutoPacker_logo.jpeg" type="image/jpeg" />
+    <link rel="apple-touch-icon" href="/AutoPacker_logo.jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -64,6 +66,7 @@ const isCurrentPage = (url: string) => {
                     <a href="/services" class={`text-sm lg:text-base transition-colors duration-200 py-2 ${isCurrentPage('/services') ? 'text-cyan-600 dark:text-cyan-400 font-semibold' : 'hover:text-cyan-600 dark:hover:text-cyan-400'}`}>Services</a>
                     <a href="/downloads" class={`text-sm lg:text-base transition-colors duration-200 py-2 ${isCurrentPage('/downloads') ? 'text-cyan-600 dark:text-cyan-400 font-semibold' : 'hover:text-cyan-600 dark:hover:text-cyan-400'}`}>Downloads</a>
                     <a href="/blog" class={`text-sm lg:text-base transition-colors duration-200 py-2 ${isCurrentPage('/blog') ? 'text-cyan-600 dark:text-cyan-400 font-semibold' : 'hover:text-cyan-600 dark:hover:text-cyan-400'}`}>Blog</a>
+                    <a href="/contact" class={`text-sm lg:text-base transition-colors duration-200 py-2 ${isCurrentPage('/contact') ? 'text-cyan-600 dark:text-cyan-400 font-semibold' : 'hover:text-cyan-600 dark:hover:text-cyan-400'}`}>Contact</a>
                     <ThemeToggle />
                 </nav>
 
@@ -88,6 +91,7 @@ const isCurrentPage = (url: string) => {
                 <a href="/services" class={`block px-4 py-3 rounded-lg transition-colors duration-200 ${isCurrentPage('/services') ? 'bg-blue-50 dark:bg-blue-900/20 text-cyan-600 dark:text-cyan-400 font-semibold' : 'hover:bg-slate-100 dark:hover:bg-slate-800'}`}>Services</a>
                 <a href="/downloads" class={`block px-4 py-3 rounded-lg transition-colors duration-200 ${isCurrentPage('/downloads') ? 'bg-blue-50 dark:bg-blue-900/20 text-cyan-600 dark:text-cyan-400 font-semibold' : 'hover:bg-slate-100 dark:hover:bg-slate-800'}`}>Downloads</a>
                 <a href="/blog" class={`block px-4 py-3 rounded-lg transition-colors duration-200 ${isCurrentPage('/blog') ? 'bg-blue-50 dark:bg-blue-900/20 text-cyan-600 dark:text-cyan-400 font-semibold' : 'hover:bg-slate-100 dark:hover:bg-slate-800'}`}>Blog</a>
+                <a href="/contact" class={`block px-4 py-3 rounded-lg transition-colors duration-200 ${isCurrentPage('/contact') ? 'bg-blue-50 dark:bg-blue-900/20 text-cyan-600 dark:text-cyan-400 font-semibold' : 'hover:bg-slate-100 dark:hover:bg-slate-800'}`}>Contact</a>
             </nav>
         </div>
     </header>
